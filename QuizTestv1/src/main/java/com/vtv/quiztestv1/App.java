@@ -1,5 +1,6 @@
 package com.vtv.quiztestv1;
 
+import com.vtv.utils.MyConnector;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -22,6 +23,14 @@ public class App extends Application {
         stage.setTitle("Quiz");
         stage.show();
     }
+
+    @Override
+    public void stop() throws Exception {
+        super.stop(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        
+        MyConnector.getInstance().close();
+    }
+    
 
     static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));

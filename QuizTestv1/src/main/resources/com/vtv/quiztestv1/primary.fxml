@@ -4,11 +4,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="Main" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vtv.quiztestv1.PrimaryController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="Main" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vtv.quiztestv1.PrimaryController">
    <children>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Subject" text="QuizTest" />
-      <Button mnemonicParsing="false" styleClass="Button" text="Quản lý câu hỏi" />
+      <Button mnemonicParsing="false" onAction="#handleQuestionManagement" styleClass="Button" text="Quản lý câu hỏi" />
       <Button layoutX="284.0" layoutY="74.0" mnemonicParsing="false" styleClass="Button" text="Luyện thi " />
       <Button layoutX="284.0" layoutY="99.0" mnemonicParsing="false" styleClass="Button" text="Thi " />
       <Button layoutX="284.0" layoutY="124.0" mnemonicParsing="false" styleClass="Button" text="Đăng ký " />
