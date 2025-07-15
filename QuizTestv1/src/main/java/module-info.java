@@ -6,4 +6,7 @@ module com.vtv.quiztestv1 {
     opens com.vtv.quiztestv1 to javafx.fxml;
     exports com.vtv.quiztestv1;
     exports com.vtv.utils;
+    exports com.vtv.utils.theme;
+    exports com.vtv.services;
+    exports com.vtv.pojo;
 }

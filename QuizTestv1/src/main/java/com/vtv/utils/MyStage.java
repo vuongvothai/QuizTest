@@ -5,6 +5,7 @@
 package com.vtv.utils;
 
 import com.vtv.quiztestv1.App;
+import com.vtv.utils.theme.ThemeManager;
 import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -37,8 +38,10 @@ public class MyStage {
             else 
                 scene.setRoot(new FXMLLoader(App.class.getResource(fxml)).load());
 
-            stage.setScene(scene);
-            stage.show();
+            ThemeManager.applyTheme(scene);
+            
+            this.stage.setScene(scene);
+            this.stage.show();
         }
     }
 }
